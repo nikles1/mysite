@@ -1,0 +1,142 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+header {
+    background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 50%, rgba(95, 8, 133, 1) 100%);
+    color: #ffffff;
+    padding: 2rem;
+    text-align: center;
+    border-bottom: 1px solid #333;
+}
+
+nav {
+    background: #1e1e1e;
+    padding: 1rem;
+    border-bottom: 1px solid #333;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav a {
+    color: #bb86fc;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #3700b3;
+    color: white;
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    background: #1e1e1e;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    border: 1px solid #333;
+}
+
+h2 {
+    color: #03dac6;
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5rem;
+}
+
+h3 {
+    color: #bb86fc;
+}
+
+pre {
+    background: #2d2d2d;
+    padding: 1rem;
+    border-radius: 5px;
+    overflow-x: auto;
+    border-left: 4px solid #bb86fc;
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+    color: #f8f8f2;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    border: 1px solid #333;
+}
+
+th, td {
+    border: 1px solid #333;
+    padding: 0.75rem;
+    text-align: left;
+}
+
+th {
+    background-color: #2a2a2a;
+    color: #bb86fc;
+}
+
+tr {
+    background-color: #252525;
+}
+
+tr:nth-child(even) {
+    background-color: #1f1f1f;
+}
+
+footer {
+    text-align: center;
+    padding: 0.3rem;
+    background: #1a1a1a;
+    color: #e0e0e0;
+    border-top: 1px solid #333;
+}
+
+.tag-example {
+    margin: 1rem 0;
+    padding: 1rem;
+    background: rgba(187, 134, 252, 0.1);
+    border-left: 4px solid #bb86fc;
+    border-radius: 0 4px 4px 0;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1e1e1e;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #bb86fc;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #9b5cff;
+}

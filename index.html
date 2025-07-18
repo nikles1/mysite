@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гайд: Первый сайт</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Как создать свой первый сайт</h1>
+        <p>Простое руководство для начинающих</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="basics.html">Основы HTML/CSS</a></li>
+            <li><a href="resources.html">Ресурсы</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>С чего начать?</h2>
+            <p>Этот гайд поможет вам создать свой первый сайт с нуля, даже если вы никогда не программировали.</p>
+	</section>
+	<section>
+            <h2> Шаг 1: Подготовка</h2>
+    <h3>1.1. Что вам понадобится:</h3>
+    <ul>
+        <li><strong>Компьютер</strong> (ПК, ноутбук).</li>
+        <li><strong>Браузер</strong> (Chrome, Firefox).</li>
+        <li><strong>Текстовый редактор</strong> (VS Code, Sublime Text, Notepad++).</li>
+    </ul>
+    
+    <h3>1.2. Основные технологии:</h3>
+    <ul>
+        <li><strong>HTML</strong> — структура сайта.</li>
+        <li><strong>CSS</strong> — дизайн и стили.</li>
+        <li>(Опционально) <strong>JavaScript</strong> — интерактивность.</li>
+    </ul>
+	</section>
+	<section>    
+    <h2> Шаг 2: Создаём файлы</h2>
+    <ol>
+        <li><strong>Создайте папку</strong> для проекта (например, <code>my-first-site</code>).</li>
+        <li><strong>Добавьте 3 файла:</strong>
+            <ul>
+                <li><code>index.html</code> — главная страница.</li>
+                <li><code>style.css</code> — стили.</li>
+                <li>(Опционально) <code>script.js</code> — скрипты.</li>
+            </ul>
+        </li>
+    </ol>
+	</section>
+	<section> 
+    <h2> Шаг 3: Пишем HTML</h2>
+    <p>Откройте <code>index.html</code> и вставьте базовый код:</p>
+    
+    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="ru"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Мой первый сайт&lt;/title&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Привет, мир!&lt;/h1&gt;
+        &lt;p&gt;Это мой первый сайт.&lt;/p&gt;
+    &lt;/header&gt;
+    &lt;main&gt;
+        &lt;section&gt;
+            &lt;h2&gt;Обо мне&lt;/h2&gt;
+            &lt;p&gt;Я учусь создавать сайты.&lt;/p&gt;
+        &lt;/section&gt;
+    &lt;/main&gt;
+    &lt;footer&gt;
+        &lt;p&gt;© 2025 Мой сайт&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    
+    <h3>Основные теги:</h3>
+    <ul>
+        <li><code>&lt;h1&gt;</code>-<code>&lt;h6&gt;</code> — заголовки.</li>
+        <li><code>&lt;p&gt;</code> — абзац.</li>
+        <li><code>&lt;img src="image.jpg" alt="Описание"&gt;</code> — изображение.</li>
+        <li><code>&lt;a href="https://example.com"&gt;Ссылка&lt;/a&gt;</code> — гиперссылка.</li>
+    </ul>
+	</section>
+	<section>
+    <h2> Шаг 4: Добавляем CSS</h2>
+    <p>Откройте <code>style.css</code> и добавьте стили:</p>
+    
+    <pre><code>
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #2c3e50;
+    color: white;
+}</code></pre>
+    
+    <h3>Что можно стилизовать?</h3>
+    <ul>
+        <li>Цвета (<code>color</code>, <code>background</code>).</li>
+        <li>Шрифты (<code>font-family</code>, <code>font-size</code>).</li>
+        <li>Отступы (<code>margin</code>, <code>padding</code>).</li>
+    </ul>
+	</section>
+	<section>
+    <h2> Шаг 5: Запускаем сайт</h2>
+    <ol>
+        <li>Сохраните файлы.</li>
+        <li>Откройте <code>index.html</code> в браузере (просто перетащите файл в Chrome/Firefox).</li>
+        <li><strong>Готово!</strong> Ваш сайт работает.</li>
+    </ol>
+	</section>
+	<section>
+    <h2> Шаг 6: Публикация в интернете (опционально)</h2>
+    <p>Чтобы сайт стал доступен всем:</p>
+    
+    <h3>1. Бесплатный вариант:</h3>
+    <ul>
+        <li>Зарегистрируйтесь на <a href="https://github.com" target="_blank">GitHub</a>.</li>
+        <li>Создайте репозиторий и загрузите файлы.</li>
+        <li>Включите GitHub Pages в настройках.</li>
+    </ul>
+    
+    <h3>2. Платный вариант:</h3>
+    <ul>
+        <li>Купите домен (например, через Reg.ru).</li>
+        <li>Загрузите файлы на хостинг (Timeweb, Beget).</li>
+    </ul>
+	</section>
+	
+
+    </main>
+    <footer>
+        <p>2025 Основы веб-разработки | Для начинающих</p>
+    </footer>
+</body>
+</html>

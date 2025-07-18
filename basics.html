@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Основы HTML/CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Основы HTML и CSS</h1>
+        <p>Базовые теги и свойства для создания веб-страниц</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="basics.html">Основы HTML/CSS</a></li>
+            <li><a href="resources.html">Ресурсы</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Основные HTML-теги</h2>
+            
+            <h3>Структура документа</h3>
+            <table>
+                <tr>
+                    <th>Тег</th>
+                    <th>Описание</th>
+                    <th>Пример</th>
+                </tr>
+                <tr>
+                    <td><code>&lt;!DOCTYPE html&gt;</code></td>
+                    <td>Объявление типа документа</td>
+                    <td>Всегда в начале HTML-документа</td>
+                </tr>
+                <tr>
+                    <td><code>&lt;html&gt;</code></td>
+                    <td>Корневой элемент страницы</td>
+                    <td>Содержит весь HTML-код</td>
+                </tr>
+                <tr>
+                    <td><code>&lt;head&gt;</code></td>
+                    <td>Метаинформация о странице</td>
+                    <td>Содержит title, meta, link и script</td>
+                </tr>
+                <tr>
+                    <td><code>&lt;body&gt;</code></td>
+                    <td>Основное содержимое страницы</td>
+                    <td>Видимая часть документа</td>
+                </tr>
+            </table>
+            
+            <h3>Текстовые элементы</h3>
+            <table>
+                <tr>
+                    <th>Тег</th>
+                    <th>Описание</th>
+                    <th>Пример</th>
+                </tr>
+                <tr>
+                    <td><code>&lt;h1&gt;-&lt;h6&gt;</code></td>
+                    <td>Заголовки разного уровня</td>
+                    <td><code>&lt;h1&gt;Главный заголовок&lt;/h1&gt;</code></td>
+                </tr>
+                <tr>
+                    <td><code>&lt;p&gt;</code></td>
+                    <td>Абзац текста</td>
+                    <td><code>&lt;p&gt;Это абзац текста.&lt;/p&gt;</code></td>
+                </tr>
+                <tr>
+                    <td><code>&lt;a&gt;</code></td>
+                    <td>Ссылка</td>
+                    <td><code>&lt;a href="https://example.com"&gt;Ссылка&lt;/a&gt;</code></td>
+                </tr>
+                <tr>
+                    <td><code>&lt;img&gt;</code></td>
+                    <td>Изображение</td>
+                    <td><code>&lt;img src="image.jpg" alt="Описание"&gt;</code></td>
+                </tr>
+                <tr>
+                    <td><code>&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;</code></td>
+                    <td>Списки (маркированные и нумерованные)</td>
+                    <td><code>&lt;ul&gt;&lt;li&gt;Пункт 1&lt;/li&gt;&lt;/ul&gt;</code></td>
+                </tr>
+            </table>
+            
+            <div class="tag-example">
+                <h3>Пример HTML-разметки</h3>
+                <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="ru"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Моя страница&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Привет, мир!&lt;/h1&gt;
+    &lt;p&gt;Это моя первая веб-страница.&lt;/p&gt;
+    &lt;ul&gt;
+        &lt;li&gt;Пункт 1&lt;/li&gt;
+        &lt;li&gt;Пункт 2&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Основные CSS-свойства</h2>
+            
+            <h3>Текст и шрифты</h3>
+            <table>
+                <tr>
+                    <th>Свойство</th>
+                    <th>Описание</th>
+                    <th>Пример</th>
+                </tr>
+                <tr>
+                    <td><code>color</code></td>
+                    <td>Цвет текста</td>
+                    <td><code>color: #333;</code></td>
+                </tr>
+                <tr>
+                    <td><code>font-family</code></td>
+                    <td>Шрифт</td>
+                    <td><code>font-family: Arial, sans-serif;</code></td>
+                </tr>
+                <tr>
+                    <td><code>font-size</code></td>
+                    <td>Размер шрифта</td>
+                    <td><code>font-size: 16px;</code></td>
+                </tr>
+                <tr>
+                    <td><code>text-align</code></td>
+                    <td>Выравнивание текста</td>
+                    <td><code>text-align: center;</code></td>
+                </tr>
+            </table>
+            
+            <h3>Блоки и отступы</h3>
+            <table>
+                <tr>
+                    <th>Свойство</th>
+                    <th>Описание</th>
+                    <th>Пример</th>
+                </tr>
+                <tr>
+                    <td><code>background</code></td>
+                    <td>Фон элемента</td>
+                    <td><code>background: #f0f0f0;</code></td>
+                </tr>
+                <tr>
+                    <td><code>margin</code></td>
+                    <td>Внешние отступы</td>
+                    <td><code>margin: 10px;</code></td>
+                </tr>
+                <tr>
+                    <td><code>padding</code></td>
+                    <td>Внутренние отступы</td>
+                    <td><code>padding: 15px;</code></td>
+                </tr>
+                <tr>
+                    <td><code>border</code></td>
+                    <td>Граница</td>
+                    <td><code>border: 1px solid #ddd;</code></td>
+                </tr>
+                <tr>
+                    <td><code>width</code>, <code>height</code></td>
+                    <td>Ширина и высота</td>
+                    <td><code>width: 100%; height: 200px;</code></td>
+                </tr>
+            </table>
+            
+            <div class="tag-example">
+                <h3>Пример CSS-стилей</h3>
+                <pre><code>body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}</code></pre>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>2025 Основы веб-разработки | Для начинающих</p>
+    </footer>
+</body>
+</html>
